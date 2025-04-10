@@ -1,0 +1,51 @@
+{
+    "name": "villaflor/ip-address",
+    "description": "A package for retrieving accurate public IP address of the server.",
+    "keywords": [
+        "villaflor",
+        "ip-address",
+        "ip",
+        "dsn"
+    ],
+    "homepage": "https://github.com/villaflor/ip-address",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Anthony M. Villaflor",
+            "email": "villaflor@live.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2|^8.3|^8.4"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.8",
+        "laravel/pint": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "Villaflor\\IpAddress\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Villaflor\\IpAddress\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
